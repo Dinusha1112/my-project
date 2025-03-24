@@ -30,3 +30,17 @@ def determine_grade(average):
         grade = "F"
     print(f"Determined grade: {grade}")  # Print after determining grade
     return grade
+
+def grade_calculator():
+    """Main function to run the grade calculator."""
+    print("Starting Grade Calculator...\n")  # Print before execution
+    marks = get_marks()
+    print(f"Marks list: {marks}")  # Print after marks collection
+    
+    average = calculate_average(marks)
+    grade = determine_grade(average)
+    
+    print("\n---- Grade Report ----")
+    print(f"Average Marks: {average:.2f}")
+    print(f"Final Grade: {grade}")
+    print("Grade calculation completed!")  # Print after final output
