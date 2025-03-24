@@ -8,3 +8,4 @@ def get_marks():
         marks.append(mark)
         print(f"Marks entered for subject {i+1}: {mark}")  # Print after each mark entry
     return marks
+
