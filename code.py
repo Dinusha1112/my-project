@@ -15,3 +15,18 @@ def calculate_average(marks):
     average = sum(marks) / len(marks)
     print(f"Calculated average marks: {average:.2f}")  # Print after calculation
     return average
+
+def determine_grade(average):
+    """Function to determine grade based on average marks."""
+    if average >= 90:
+        grade = "A"
+    elif average >= 80:
+        grade = "B"
+    elif average >= 70:
+        grade = "C"
+    elif average >= 60:
+        grade = "D"
+    else:
+        grade = "F"
+    print(f"Determined grade: {grade}")  # Print after determining grade
+    return grade
