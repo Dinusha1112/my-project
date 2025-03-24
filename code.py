@@ -9,3 +9,9 @@ def get_marks():
         print(f"Marks entered for subject {i+1}: {mark}")  # Print after each mark entry
     return marks
 
+
+def calculate_average(marks):
+    """Function to calculate the average of marks."""
+    average = sum(marks) / len(marks)
+    print(f"Calculated average marks: {average:.2f}")  # Print after calculation
+    return average
