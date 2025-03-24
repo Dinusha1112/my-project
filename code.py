@@ -48,3 +48,21 @@ def grade_calculator():
 # Run the program
 if __name__ == "__main__":
     grade_calculator()
+
+def grade_calculator():
+    """Main function to run the grade calculator."""
+    print("Starting Grade Calculator...\n")  # Print before execution
+    marks = get_marks()
+    print(f"Marks list: {marks}")  # Print after marks collection
+    
+    average = calculate_average(marks)
+    grade = determine_grade(average)
+    
+    # New feature: Check if the student passed or failed
+    pass_fail = "Pass" if average >= 50 else "Fail"  # Assuming 50 is the passing mark
+    
+    print("\n---- Grade Report ----")
+    print(f"Average Marks: {average:.2f}")
+    print(f"Final Grade: {grade}")
+    print(f"Result: {pass_fail}")  # Display the pass/fail status
+    print("Grade calculation completed!")  # Print after final output
