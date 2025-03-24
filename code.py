@@ -44,3 +44,7 @@ def grade_calculator():
     print(f"Average Marks: {average:.2f}")
     print(f"Final Grade: {grade}")
     print("Grade calculation completed!")  # Print after final output
+
+# Run the program
+if __name__ == "__main__":
+    grade_calculator()
